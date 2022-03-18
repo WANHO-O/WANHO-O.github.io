@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Document - Writing Posts
+title: AE plug-ins SampleProjects guide
 mathjax: true
 ---
 
