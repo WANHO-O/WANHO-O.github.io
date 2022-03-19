@@ -1,25 +1,51 @@
 ---
-layout: base
+layout: none
 title: WANHOO
 excerpt: WANHOO
 ---
 
-<div itemscope itemtype="{{ _author_itemtype }}" class="layout--author">
-  <div class="main">
-    <div class="content">
-      <div class="author-avatar"></div>
-      <h1 itemprop="name" class="title-text">{{ site.author.name }}</h1>
-      {% include author-links.html author=site.author %}
-      <p>
-        <a
-          itemprop="url"
-          class="social-link blog"
-          title="Visit my blog."
-          href="/src/index.html"
-          >Visit My Blog</a
-        >
-      </p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WANHOO</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+  </head>
+  <body>
+    <section class="showcase">
+      <header>
+        <div><img src="assets/mstile-150x150.png" alt="" /></div>
+        <div class="toggle active"></div>
+      </header>
+      <video src="assets/BGvideo.mp4" autoplay loop muted></video>
+
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>WANHOO</h2>
+        <h3>就是玩</h3>
+        <p>嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿嘿</p>
+        <a href="/src/index.html">VIEW NOW!</a>
+      </div>
+    </section>
+    <div class="menu">
+      <ul>
+        <li><a href="">home</a></li>
+        <li><a href="">introduce</a></li>
+        <li><a href=""></a>coach</li>
+        <li><a href=""></a>lessons</li>
+        <li><a href=""></a>Destination</li>
+      </ul>
     </div>
-  </div>
-</div>
-{% include analytics.html %}
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase");
+
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
