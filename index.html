@@ -1,11 +1,25 @@
 ---
-layout: articles
-title: Articles - Item (Excerpt + Read More + Info)
-articles:
-data_source: site.sample_page
-show_cover: false
-show_excerpt: true
-show_readmore: true
-show_info: true
+layout: base
+title: WANHOO
+excerpt: WANHOO
 ---
-啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊啊
+
+<div itemscope itemtype="{{ _author_itemtype }}" class="layout--author">
+  <div class="main">
+    <div class="content">
+      <div class="author-avatar"></div>
+      <h1 itemprop="name" class="title-text">{{ site.author.name }}</h1>
+      {% include author-links.html author=site.author %}
+      <p>
+        <a
+          itemprop="url"
+          class="social-link blog"
+          title="Visit my blog."
+          href="/src/index.html"
+          >Visit My Blog</a
+        >
+      </p>
+    </div>
+  </div>
+</div>
+{% include analytics.html %}

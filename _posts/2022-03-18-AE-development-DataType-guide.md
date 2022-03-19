@@ -1,7 +1,8 @@
 ---
 layout: article
 title: AE plug-ing-AEGP-DataType-guide
-mathjax: true
+sidebar:
+nav: layouts
 ---
 
 > ## AEGP_MemHandle --- [AEGP Memory Suite](https://ae-plugins.docsforadobe.dev/aegps/aegp-suites.html#aegps-aegp-suites-memory-suite)

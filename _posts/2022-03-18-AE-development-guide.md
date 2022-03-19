@@ -1,7 +1,8 @@
 ---
 layout: article
 title: AE plug-ins SampleProjects guide
-mathjax: true
+sidebar:
+nav: layouts
 ---
 
 # AEGPs
